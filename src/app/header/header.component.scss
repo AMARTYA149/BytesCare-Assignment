@@ -1,0 +1,57 @@
+.header {
+  box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+  min-height: 80px;
+  padding: 26px 100px;
+
+  &-items-container {
+    justify-content: flex-end;
+  }
+}
+
+.nav {
+  &-items {
+    cursor: pointer;
+  }
+
+  &-link {
+    color: #535353;
+  }
+}
+
+.img-logo {
+  width: 100%;
+  height: auto;
+}
+
+.demo-btn {
+  background: #ffa300;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  border: 0;
+}
+
+@media only screen and (min-width: 320px) {
+  .header {
+    &-items {
+      gap: 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .header {
+    &-items {
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .header {
+    &-items {
+      gap: 32px;
+    }
+  }
+}
