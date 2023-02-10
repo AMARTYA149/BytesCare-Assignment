@@ -1,0 +1,36 @@
+<div class="bytescare-container">
+  <h4>Why BYTESCARE?</h4>
+  <h2>
+    The right choice to increase your
+    <span class="yellow-text">contents security.</span>
+  </h2>
+
+  <div class="bytescare-info-container">
+    <p>
+      Bytescare provides a variety of fast, economical, robust, accurate,
+      scalable, and transparent AI/ML empowered solutions that assist our
+      customers in protecting their content from any copyright infringement and
+      also from any pre/post piracy damages. Our smart solutions differentiate
+      us from the other competitors in the Market.
+    </p>
+    <p>
+      We anticipate our customers to easily protect their content and brands
+      from any damage and thefts with our user-friendly, reliable, and 24*7
+      available products and services including Pre-Piracy Solutions,
+      Post-Piracy Solutions, and Brand & Reputation Management tools.
+    </p>
+  </div>
+
+  <div class="bytescare-card-container">
+    <div class="bytescare-card" *ngFor="let card of bytescareCardsInfo">
+      <div class="card-img">
+        <img src="{{ card.img }}" alt="" />
+      </div>
+
+      <div class="card-info">
+        <h5 class="card-title">{{ card.featureName }}</h5>
+        <p class="card-text">{{ card.desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>
