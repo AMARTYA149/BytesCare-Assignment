@@ -1,0 +1,109 @@
+.intro {
+  &-container {
+    padding: 50px 100px;
+  }
+
+  &-sub-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-img {
+    width: 45%;
+  }
+
+  &-info {
+    width: 55%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #535353;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &-companies {
+    padding: 32px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+      font-family: "Be Vietnam Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      color: #333333;
+    }
+  }
+
+  &-comp-logo {
+    padding: 23px 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #333333;
+  font-family: "Be Vietnam Pro";
+}
+
+@media only screen and (min-width: 320px) {
+  h1 {
+    width: 100%;
+  }
+
+  .intro {
+    &-sub-container {
+      flex-direction: column;
+    }
+
+    &-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-info {
+      width: 100%;
+    }
+
+    &-comp-logo {
+      gap: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .intro {
+    &-sub-container {
+      flex-direction: row;
+    }
+
+    &-comp-logo {
+      gap: 50px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  h1 {
+    width: 70%;
+  }
+}
