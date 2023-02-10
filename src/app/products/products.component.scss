@@ -1,0 +1,116 @@
+.product {
+  &-container {
+    background-color: #252833;
+  }
+}
+
+.industry {
+  &-container {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  &-info {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #fff;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+h2 {
+  color: #fff;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: right;
+}
+
+h3 {
+  text-align: right;
+  margin: 0;
+}
+
+.know-more {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+
+  &-btn {
+    width: 104px;
+    height: 38px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #252833;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    color: #f0f0f0;
+  }
+}
+
+.products {
+  padding: 20px 0;
+  border-top: 1px solid lightgray;
+}
+
+@media only screen and (min-width: 320px) {
+  .product {
+    &-container {
+      padding: 50px 100px;
+    }
+  }
+
+  .industry {
+    &-container {
+      flex-direction: column;
+    }
+    &-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-info {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .product {
+    &-container {
+      padding: 50px 100px 100px 0px;
+    }
+  }
+  .industry {
+    &-container {
+      flex-direction: row;
+    }
+    &-img {
+      width: 50%;
+      justify-content: flex-end;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-info {
+      width: 50%;
+    }
+  }
+}
