@@ -8,12 +8,7 @@
     justify-content: space-between;
   }
 
-  &-img {
-    width: 45%;
-  }
-
   &-info {
-    width: 55%;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -98,6 +93,15 @@ h1 {
 
     &-comp-logo {
       gap: 50px;
+    }
+
+    &-img {
+      width: 35%;
+      justify-content: flex-end;
+    }
+
+    &-info {
+      width: 55%;
     }
   }
 }

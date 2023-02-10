@@ -1,0 +1,89 @@
+.target {
+  &-container {
+    background-color: #252833;
+  }
+}
+
+.industry {
+  &-container {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  &-info {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #fff;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+h2 {
+  color: #fff;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 320px) {
+  .target {
+    &-container {
+      padding: 50px 100px;
+    }
+  }
+
+  .industry {
+    &-container {
+      flex-direction: column;
+    }
+    &-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-info {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .target {
+    &-container {
+      padding: 50px 0px 100px 100px;
+    }
+  }
+  .industry {
+    &-container {
+      flex-direction: row;
+    }
+    &-img {
+      width: 50%;
+      justify-content: flex-end;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-info {
+      width: 50%;
+    }
+  }
+}
