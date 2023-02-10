@@ -1,0 +1,34 @@
+<div class="bytescare-container">
+  <h2>
+    <span class="yellow-text">USPs</span> &
+    <span class="yellow-text">Client</span> Satisfaction
+  </h2>
+
+  <div class="bytescare-card-container">
+    <div class="bytescare-card" *ngFor="let card of bytescareCardsInfo">
+      <div class="card-img">
+        <img src="{{ card.img }}" alt="" />
+      </div>
+
+      <div class="card-info">
+        <h5 class="card-title">{{ card.featureName }}</h5>
+        <p class="card-text">{{ card.desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="platform-container">
+  <h2><span class="yellow-text">Platforms</span> We Serve</h2>
+
+  <div class="platform-list-container">
+    <div class="platform-card" *ngFor="let platform of platformList">
+      <div class="platform-img-container">
+        <img src="{{ platform.img }}" alt="" />
+      </div>
+      <div class="platform-place">
+        <p>{{ platform.place }}</p>
+      </div>
+    </div>
+  </div>
+</div>

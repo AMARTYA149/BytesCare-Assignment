@@ -8,6 +8,7 @@ import { IntroPageComponent } from './intro-page/intro-page.component';
 import { TargetIndustryComponent } from './target-industry/target-industry.component';
 import { WhyBytescareComponent } from './why-bytescare/why-bytescare.component';
 import { ProductsComponent } from './products/products.component';
+import { UspClientComponent } from './usp-client/usp-client.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProductsComponent } from './products/products.component';
     IntroPageComponent,
     TargetIndustryComponent,
     WhyBytescareComponent,
-    ProductsComponent
+    ProductsComponent,
+    UspClientComponent
   ],
   imports: [
     BrowserModule,
