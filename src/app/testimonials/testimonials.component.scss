@@ -50,3 +50,45 @@
   position: absolute;
   bottom: 25px;
 }
+
+.demo {
+  &-container {
+    width: 100%;
+    height: 500px;
+    padding: 175px 100px;
+    background-image: url("../../assets/images/yellow-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p {
+      color: #fff;
+    }
+
+    h2 {
+      font-family: "Be Vietnam Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 51px;
+      color: #333333;
+    }
+  }
+}
+
+.nav-link.yellow-text {
+  width: 150px;
+  background-color: #fff;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.demo-btn {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
