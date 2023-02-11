@@ -1,0 +1,22 @@
+<div class="testimonial-container">
+  <h2>Testimonials</h2>
+
+  <div class="testimonial-card-container">
+    <div class="testimonial-card" *ngFor="let testimonial of testimonialsList">
+      <div class="user-img">
+        <img src="{{ testimonial.userImg }}" alt="" />
+      </div>
+      <div class="brand-name">
+        <img src="{{ testimonial.brandImg }}" alt="" />
+      </div>
+      <div class="testimonial-text">
+        <p>
+          {{ testimonial.testimonialText }}
+        </p>
+      </div>
+      <div class="user-name yellow-text">
+        {{ testimonial.userName }}
+      </div>
+    </div>
+  </div>
+</div>

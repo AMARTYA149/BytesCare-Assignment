@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -9,6 +8,7 @@ import { TargetIndustryComponent } from './target-industry/target-industry.compo
 import { WhyBytescareComponent } from './why-bytescare/why-bytescare.component';
 import { ProductsComponent } from './products/products.component';
 import { UspClientComponent } from './usp-client/usp-client.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,11 @@ import { UspClientComponent } from './usp-client/usp-client.component';
     TargetIndustryComponent,
     WhyBytescareComponent,
     ProductsComponent,
-    UspClientComponent
+    UspClientComponent,
+    TestimonialsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
