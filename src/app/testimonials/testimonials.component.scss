@@ -15,7 +15,7 @@
 
   &-card-container {
     display: flex;
-    gap: 50px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 125px;
@@ -54,8 +54,8 @@
 .demo {
   &-container {
     width: 100%;
-    height: 500px;
-    padding: 175px 100px;
+    min-height: 500px;
+    padding: 125px 100px;
     background-image: url("../../assets/images/yellow-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
